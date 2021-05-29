@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;700&family=KoHo:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+font-family: 'KoHo', sans-serif; 
+
+    font-family: 'Bebas Neue', cursive;
+    */
+body{
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #222223;
+    border: 1px solid #222223;
+}
+p{
+    line-height: 26px;
+}
+/* header */
+/* navigation */
+header{
+    width: 100%;
+    border: 1px solid #222223;
+    padding: 0 50px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    text-transform: uppercase;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #222223;
+}
+header .logo{
+    font-weight: 700;
+    font-family: 'KoHo', sans-serif; 
+    font-size: 24px;
+}
+
+/* main content */
+main{
+    border: 1px solid #222223;
+    margin: 100px 50px -1px;
+    padding: 50px;
+}
+main .hero{
+    text-align: center;
+}
+main .hero h1{
+    font-size: 360px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: -5%;
+}
+main .hero h3{
+    font-size: 36px;
+    margin-top: 40px;
+}
+
+/* project section */
+.project{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.card{
+    border: solid 1px #222223;
+    padding: 20px;
+    margin: 50px 0;
+}
+.card img{
+    width: 100%;
+}
+.card-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.card-desc{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.button{
+    padding: 10px 30px;
+    background-color: #222223;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* footer */
+footer{
+    border: 1px solid #222223;
+    margin: 0px 50px 50px;
+    padding: 50px;
+    text-align: center;
+}
+footer p{
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.footer{
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+.footer .social-icon a{
+    color: #222223;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #222831;
+}
+::-webkit-scrollbar-thumb {
+    background: #4e5662; 
+}
+
+/* ABOUT PAGE */
+img{
+    width: 100%;
+}
+.description{
+    margin-top: 30px;
+    line-height: 26px;
+}
+
+.skill{
+    line-height: 26px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skill-card{
+    width: 30%;
+}
+.skill-head{
+    border: 1px solid #222223;
+    padding: 20px;
+    margin-bottom: -1px;
+}
+.skill-body{
+    border: 1px solid #222223;
+    padding: 20px;
+    padding-left: 20px;
+}
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+    header .logo{
+        font-size: 20px;
+    }
+    main .hero h1{
+        font-size: 23vw;
+        letter-spacing: -5%;
+    }
+    main .hero h3{
+        font-size: 32px;
+        margin-top: 40px;
+    }
+    main{
+        margin: 100px 20px -1px;
+        padding: 30px;
+    }
+    footer{
+        border: 1px solid #222223;
+        margin: 0px 20px 50px;
+        padding: 50px;
+        text-align: center;
+    }
+    .footer{
+        height: 300px;
+    }
+    .skill-card{
+        width: 30%;
+    }
+  }
+
+@media screen and (max-width: 700px){
+    header .logo{
+        font-size: 20px;
+    }
+    main .hero h1{
+        font-size: 100px;
+        letter-spacing: -5%;
+    }
+    main .hero h3{
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    main{
+        margin: 100px 0px -1px;
+        padding: 10px;
+    }
+    footer{
+        border: 1px solid #222223;
+        margin: 0px 0px 50px;
+        padding: 50px;
+        text-align: center;
+    }
+    .footer{
+        height: 300px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .skill{
+        flex-direction: column;
+    }
+    .skill-card{
+        width: 100%;
+        margin: 15px 0;
+    }
+    .footer .social-icon a{
+        color: #222223;
+        display: flex;
+        flex-direction: column;
+    }
+}
